@@ -29,31 +29,36 @@ let list1 = [
  { firstName: 'Lukas', lastName: 'X.', country: 'Croatia', continent: 'Europe', age: 35, language: 'Python' },
  { firstName: 'Madison', lastName: 'U.', country: 'United States', continent: 'Americas', age: 32, language: 'Ruby' } 
 ];
-let array = {}
 
-let solution = list1[0];
-// console.log(solution)
-for (let i = 0; i < list1.length; i++) {
- // console.log(array.push(solution))
- let result = list1[i].greetings = "You are welcome"
- array.push(result)
-}
-console.log(array)
-// let array = []
-// function greetDevelopers(list) {
+
+function greetDevelopers(list) {
  // thank you for checking out my kata :)
- // return list.map(element => {
- //  element = `Hi ${element.firstName}`
-  // return list[0].greetings = "You are welcome"
-  // return array.push(list[0]).
- // });
+  list.map((e, i) => list[i].greeting = `Hi ${e.firstName}, what do you like the most about ${e.language}?`)
+  return list;
+ };
  
- // return result;
+ greetDevelopers(list1)
+
+
+//  function greetDevelopers(list) {
+//   list.forEach(function(developer) {
+//     developer.greeting = `Hi ${developer.firstName}, what do you like the most about ${developer.language}?`;
+//   });
+  
+//   return list;
 // }
 
-// let solution = greetDevelopers(list1[0])
-// greetDevelopers(list1)
-// console.log(solution)
-// console.log(array)
 
+// function greetDevelopers(list) {
+//  // thank you for checking out my kata :)
+//  return list.map( function( a ) {
+//                   a.greeting = "Hi " + a.firstName + ", what do you like the most about " + a.language + "?";
+//                   return a;
+//                  });
+// }
 
+// function greetDevelopers(list) {
+//  return list.map(x => Object.assign({}, x, {
+//    greeting: `Hi ${x.firstName}, what do you like the most about ${x.language}?`
+//  }))
+// }

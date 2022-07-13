@@ -48,20 +48,20 @@ let sunday = [10, 20, 30], monday = [30, 40, 50];
 let stairs = [sunday,monday];
 let addition = [];
 
-function stairsIn20(s){
+// function stairsIn20(s){
   //your code here
   // let addition = 0;
 
 //  s.forEach(element => addition.push(element.reduce( (acc, current) => acc + current, 0)));
 //  addition.reduce((sum, days) => sum + days, 0);
   // return s.reduce( (acc, current) => acc + current, 0);
-  let sum;
-  s.forEach(element => {
-    sum = element.reduce( (acc, current) => acc + current, 0);
-    addition.push(sum);
-  } )
-  return addition.reduce((add, days) => add + days, 0);
-}
+//   let sum;
+//   s.forEach(element => {
+//     sum = element.reduce( (acc, current) => acc + current, 0);
+//     addition.push(sum);
+//   } )
+//   return addition.reduce((add, days) => add + days, 0);
+// }
 
 function stairsIn20(a) {
   return 20 * a.reduce((s, a) => s + a.reduce((s, n) => s + n, 0), 0);

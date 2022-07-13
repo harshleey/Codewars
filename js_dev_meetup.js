@@ -29,7 +29,7 @@ function countDevelopers(list) {
   let language = list[i].language;
   if(continent === "Europe" && language === "JavaScript") {
    // console.log(continent)
-   sum++
+   sum++;
   }
  }
  console.log(sum)
