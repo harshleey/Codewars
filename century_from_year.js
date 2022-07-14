@@ -13,5 +13,22 @@
 
 function century(year) {
  // Finish this :)
- return;
+ return Math.ceil(year / 100);
 }
+
+// OTHER SOLUTIONS
+// function century(year) {
+//  return (year + 99) / 100 | 0;
+// }
+
+// const century = year => year % 100 === 0 ? parseInt(year / 100) : parseInt(year / 100) + 1;
+
+// function century(year) {
+//  if (year <= 100){
+//    return 1;
+//  }
+
+//  let cen = parseInt(year / 100);
+//  let rem = year % 100;
+ 
+//  return rem === 0 ? cen : cen + 1;
