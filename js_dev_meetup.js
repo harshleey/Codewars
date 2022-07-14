@@ -20,22 +20,7 @@ var list1 = [
 // All data will always be valid and uniform as in the example above.
 
 
-function countDevelopers(list) {
- // your awesome code here :)
- let sum = 0;
- for (let i = 0; i < list.length; i++) {
-  // console.log(list[i].continent);
-  let continent = list[i].continent;
-  let language = list[i].language;
-  if(continent === "Europe" && language === "JavaScript") {
-   // console.log(continent)
-   sum++;
-  }
- }
- console.log(sum)
-}
-
-countDevelopers(list1)
+let hashtag = "#"
 
 // function countDevelopers(list) {
 //  return list.filter(x=>x.continent=='Europe'&&x.language=='JavaScript').length

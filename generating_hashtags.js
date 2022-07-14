@@ -12,6 +12,28 @@
 // "    Hello     World   "                  =>  "#HelloWorld"
 // ""                                        =>  false
 
+/* 
+Create a function that takes in an argument
+create a variable with the string '#' so you can attach it to your solution
+creating a condition that states that if string is empty, return false
+else, 
+make each words in the string an entry of an array by splitting it in order to splice it
+try trimming it, then splitting the string, then slice off the first letter of each word then capitalize them and join them back */
+
+let generator = string => {
+  
+  let solution = string.replace(/ /g, "").split(',').join(",")
+ console.log(solution)
+}
+
+generator(" Hello there thanks for trying my Kata")
+
+
+
+
+
+
+
 
 // function generateHashtag (string) {
 //   if (string.trim() === '') return false;
@@ -30,22 +52,22 @@
 
 
 
-function generateHashtag (string) {
-  if (string.trim() === "") {
-    return false;
-  }
+// function generateHashtag (string) {
+//   if (string.trim() === "") {
+//     return false;
+//   }
 
-  let stringCapitalize = string
-  .split(" ")
-  .map(element => element.charAt(0).toUpperCase() + element.slice(1))
-  .join("")
+//   let stringCapitalize = string
+//   .split(" ")
+//   .map(element => element.charAt(0).toUpperCase() + element.slice(1))
+//   .join("")
 
-  stringCapitalize = `#${stringCapitalize.trim()}`
-  console.log(stringCapitalize)
+//   stringCapitalize = `#${stringCapitalize.trim()}`
+//   console.log(stringCapitalize)
 
-  if (stringCapitalize.length > 140) {
-    return false;
-  }
+//   if (stringCapitalize.length > 140) {
+//     return false;
+//   }
   
-}
-generateHashtag(" Hello there thanks for trying my Kata")
+// }
+// generateHashtag(" Hello there thanks for trying my Kata")

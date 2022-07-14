@@ -12,6 +12,22 @@
 
 // Hint: Don't forget to check for bad values like null/undefined
 
+// filter through the array and get the length OR
+// loop through the array and update the zero
+// let countSheeps = arrayOfSheeps => {
+//   console.log(arrayOfSheeps.filter(element => element).length)
+// }
+
+let countSheeps = arrayOfSheeps => {
+  let sheepCount = 0;
+  arrayOfSheeps.forEach(e => {
+    if (e === true) {
+      sheepCount++
+    }
+  })
+  console.log(sheepCount)
+}
+
 // function countSheeps(arrayOfSheep) {
 //   // TODO May the force be with you
 //   let total = 0;
@@ -24,14 +40,12 @@
 
 // }
 
-let result = countSheeps([true,  true,  true,  false,
+countSheeps([true,  true,  true,  false,
     true,  true,  true,  true ,
     true,  false, true,  false,
     true,  false, false, true ,
     true,  true,  true,  true ,
     false, false, true,  true])
-
-// console.log(result)
 
 // OR
 
@@ -40,8 +54,8 @@ let result = countSheeps([true,  true,  true,  false,
   
 // }
 
-function countSheeps(arrayOfSheep) {
-  return arrayOfSheep.filter (element => element === true).length
-}
+// function countSheeps(arrayOfSheep) {
+//   return arrayOfSheep.filter (element => element === true).length
+// }
 
-console.log(result)
+// console.log(result)

@@ -43,10 +43,35 @@
 //     5524, 9870, 6591, 8616, 5163, 6656, 8150, 8826, 6875, 5242, 9585, 9649, 9838, 
 //     7150, 6567, 8524, 7613, 7809, 5562, 7799, 7179, 5184, 7960, 9455, 5633, 9085];
 
-let sunday = [10, 20, 30], monday = [30, 40, 50];
+// let sunday = [10, 20, 30], monday = [30, 40, 50];
+/* ONE METHOD
+create an empty array
+loop through the entire array
+sum up each array entries in the array
+push it into the empty array*/
 
-let stairs = [sunday,monday];
-let addition = [];
+// let stairsIn20 = s => {
+//   let sum = 0
+//   for (let i = 0; i < s.length; i++) {
+//     for (let j = 0; j < s[i].length; j++) {
+//       sum += s[i][j];    
+//     }
+//   }
+//   console.log(sum * 20)
+// }
+
+let stairsIn20 = s => {
+  console.log(s.reduce((sum, current) => sum + current.reduce((sum, current) => sum + current), 0) * 20)
+}
+
+
+let sunday = [10, 20, 30], monday = [30, 40, 50];
+stairsIn20([sunday, monday])
+
+
+
+
+
 
 // function stairsIn20(s){
   //your code here
@@ -63,11 +88,11 @@ let addition = [];
 //   return addition.reduce((add, days) => add + days, 0);
 // }
 
-function stairsIn20(a) {
-  return 20 * a.reduce((s, a) => s + a.reduce((s, n) => s + n, 0), 0);
-}
-stairsIn20(stairs);
+// function stairsIn20(a) {
+//   return 20 * a.reduce((s, a) => s + a.reduce((s, n) => s + n, 0), 0);
+// }
+// stairsIn20(stairs);
 
-console.log(addition)
+// console.log(addition)
 
 // console.log(stairs[0][2])
