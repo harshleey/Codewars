@@ -37,3 +37,14 @@ function basicOp(operation, value1, value2){
 //  '*': (a,b) => a * b,
 //  '/': (a,b) => a / b,
 // }
+
+let input = prompt("What is your name");
+// let count = 0
+// for (let i = 0; i < input.length; i++) {
+//     if (input[i] === 'a' || input[i] === 'e' || input[i] === 'i' || input[i] === 'o' || input[i] === 'u') {
+//         count++
+//     }
+//   }
+// alert(count)
+// let input = prompt("What is your name");
+// alert(input.split("").reverse().join("").toLowerCase())
